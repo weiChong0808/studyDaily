@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!-- 1、指定基础语言 -->
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <!--2、指定视口信息-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <!--3、指定跨IE浏览器兼容性-->
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <title></title>
+    <!--4、引入 Bootstrap.css-->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/P-B.css">
+    <!--5、引入两个兼容性文件(老IE)-->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="container">
+	<svg width="1200" height="800" id="s3"></svg>
+    <!--1、Blog头部-->
+    <header id="head">
+
+    </header>
+    <!--2、Blog导航-->
+    <nav id="nav" class="nav navbar">
+        <div class="container">
+            <div class="navbar-header" id="scrool">
+                <div id="top" class="navbar-brand">
+                    点我
+                </div>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="dropdown" style="position:relative;">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        我的爱好
+                    </a>
+                    <ul class="dropdown-menu" id="d1">
+                        <li>Basketball</li>
+                        <!--<li class="divider"></li>-->
+                        <li>Table-tennis</li>
+                        <!--<li class="divider"></li>-->
+                        <li>Climb mountains</li>
+                        <!--<li class="divider"></li>-->
+                        <li>Beautiful-girl</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">我的项目</a>
+                </li>
+                <li>
+                    <a href="#">获得荣誉</a>
+                </li>
+                <li>
+                    <a href="#">求职意向</a>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="search" class="form-control navbar-btn" placeholder="search">
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <!--3、Blog主体内容-->
+    <section id="main" class="row">
+        <!--<img src="img/01.png" alt="" class="slideInRingt outup">-->
+        <div class="col-md-3">
+            <div>
+                <div class="pes">
+                    <h3>个人简介</h3>
+                    <b>About Me</b>
+                </div>
+                <img src="img/sad.jpg" class="img-responsive img-circle" width="200px">
+
+                <ul class="list-unstyled caption">
+                    <li title="woshiweichong">姓名：卫冲</li>
+                    <li>性别：男</li>
+                    <li>生日：1993.12</li>
+                    <li>工作经验：3年</li>
+                    <li>现居住地：北京</li>
+                    <li>毕业院校：晋中职业技术学院</li>
+                    <li>移动电话：18734788395</li>
+                    <li>电子邮件：1938708015@qq.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="skill">
+                <h3>我的技能</h3>
+                <b>My Skills</b>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width:99%">
+                    技能99%
+                </div>
+            </div>
+            <!-- <div id="box">
+                <div>HTML</div>
+                <div>DIV+CSS</div>
+                <div>JS</div>
+                <div>Jquery</div>
+                <div>Ajax</div>
+                <div>Node.js</div>
+            </div> -->
+			<div class="wrap">
+				<div class="cube">
+					<div class="out-front">HTML</div>
+					<div class="out-back">DIV+CSS</div>
+					<div class="out-left">JS</div>
+					<div class="out-right">Jquery</div> 
+					<div class="out-top">Ajax</div>
+					<div class="out-bottom">Node.js</div>
+					<span class="in-front"></span>
+					<span class="in-back"></span>
+					<span class="in-left"></span>
+					<span class="in-right"></span>
+					<span class="in-top"></span>
+					<span class="in-bottom"></span>
+				</div>
+			</div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-primary progress-bar-striped active" style="width:99%">
+                    经验99%
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div>
+                <h3>工作经验</h3>
+                <b>Work Experience</b>
+
+                <p>
+                    2014.07-2015.12 常州瑞瑞科技有限公司 设备调试员
+                </p>
+                <ol type="1">
+                    <li>解答客户相关技术问题</li>
+                    <li>根据生产任务监督进度</li>
+                    <li>设备日常检点故障处理</li>
+                    <li>自动线设备的调试及维修</li>
+                    <li>据生产任务监督生产进度</li>
+                </ol>
+                <p>
+                    2016.02-2017.03 北京大米未来科技公司 课程销售
+                </p>
+                <ol type="1">
+                    <li>协助调查市场、电话约课</li>
+                    <li>收集整理客户的反馈意见</li>
+                    <li>合理制定自己的销售计划</li>
+                    <li>解决客户的业务相关问题</li>
+                    <li>收集整理客户的反馈意见</li>
+                    <li>合理制定自己的销售计划</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <!--4、Blog底部-->
+    <footer id="foot">
+
+
+        <div>
+            <h3>自我评价</h3>
+
+            <p>
+                本人性格随和，稳重，乐观，工作认真负责，积极主动。有较强的学习操作能力、团队协作能力，
+                能迅速适应各种各种环境，并融入其中，能虚心接受别人的建议同时自我反省改进，相信自己可以很好的胜任工作。
+            </p>
+        </div>
+
+    </footer>
+</div>
+<!--6、引入 行为依赖 文件-->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/mymouse.js" id="mymouse"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/P-B.js"></script>
+<script>
+    $(function () {
+        setTimeout(function () {
+            $("body").css("background-color", "#C4AA93");
+        }, 5000);
+    });
+</script>
+<script src="js/bootstrap.js"></script>
+<!--7、引入测试的JS文件-->
+<script src="js/bootlint.js"></script>
+</body>
+</html>
