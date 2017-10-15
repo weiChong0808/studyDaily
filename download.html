@@ -1,0 +1,710 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>UC浏览器</title>
+<style type="text/css">
+*{
+	font-family:"微软雅黑";
+	margin:0;
+	padding:0;
+	text-decoration: none;
+	}
+li{
+	list-style: none;
+    line-height: 30px;
+    font-family: 微软雅黑;
+    font-size: 14px;
+	}
+#header{
+	width:990px;
+	height:70px;
+	margin:0 auto;
+	}
+.logo{
+	float:left;
+	padding-top:10px;
+	}
+.nav{
+	float:right;
+	margin-top:28px;
+	}
+.wrap {
+    background: #f2f2f2 url(images/bg_cont.png) top repeat-x;
+	}
+.container{
+	width: 990px;
+    margin: 0 auto;
+	}
+.nav_guide {
+    padding: 10px 5px;
+    font-size: 12px;
+}
+.title_down {
+    margin: 0 15px;
+    line-height: 45px;
+}
+.system_list {
+    height: 135px;
+}
+.clearfix {
+    zoom: 1;
+}
+.downsystem {
+    margin: auto;
+    padding: 30px 0;
+    width: 940px;
+    color: #e9e9e9;
+    border-top: 1px solid #eee;
+}
+.downsystem a, .downsystem a:visited {
+    display: inline-block;
+    margin: 0 10px 5px 10px;
+    padding: 0 8px;
+	color: #445;
+}
+.down_hot_list {
+    padding: 20px 15px 0;
+    word-wrap: break-word;
+}
+.space_15 {
+    height: 15px;
+    font-size: 0;
+    clear: both;
+}
+.search{ 
+	float:right; 
+	width: 300px; 
+	line-height:20px;
+	position:relative;
+	height:36px;
+	margin-top:10px;
+	}
+.search .input_text{
+	padding:2px 8px;
+	width:250px; 
+	height:24px;
+	line-height:23px;
+	border:1px #e8e8e8 solid;
+	color:#999;
+	position:absolute; 
+	top:1px; 
+	left:6px;
+	}
+.search .input_sub {
+	width:36px;
+	height:30px;
+	border:0;
+	background:#f60 url(images/download.faj_03.jpg) center no-repeat;
+	cursor:pointer;
+	position:absolute;
+	top:1px;
+	right:10px;
+	}
+.input_text{
+	margin-top:10px;
+	padding:2px 8px;
+	width:250px; 
+	height:24px;
+	line-height:23px;
+	border:1px #e8e8e8 solid;
+	color:#999;	top:1px; 
+	left:6px;
+	}
+.input_text2{
+	margin-top:10px;
+	padding:2px 8px;
+	width:180px; 
+	height:24px;
+	line-height:23px;
+	border:1px #e8e8e8 solid;
+	color:#999;	top:1px; 
+	left:6px;
+	}
+.down_hot_list li {
+    float: left;
+    padding: 5px 0;
+    width: 16.66%;
+    line-height: 18px;
+    font-size: 13px;
+	}
+.choose_model {
+    text-align: center;
+    padding: 30px 0 20px;
+	margin-top:65px;
+	}
+.choose_model_btn {
+    display: inline-block;
+    padding: 15px 20px;
+    min-width: 180px;
+    _width: 180px;
+    height: 20px;
+    line-height: 20px;
+    color: #fff;
+    text-shadow: 0 -1px 0 #ea4900;
+    background: #f60;
+    cursor: pointer;
+	}
+.choose_model_btn em {
+    display: inline-block;
+    margin-right: 2px;
+    width: 20px;
+    height: 20px;
+    background: url(images/ico_mobile.png);
+    vertical-align: -4px;
+	}
+.choose_model1 {
+    text-align: center;
+    padding: 30px 0 20px;
+	margin-top:15px;
+	}
+.choose_model1_btn {
+    display: inline-block;
+    padding: 0px 5px;
+    min-width: 80px;
+    _width: 80px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    text-shadow: 0 -1px 0 #ea4900;
+    background: #f60;
+    cursor: pointer;
+	}
+.choose_model2{ 
+	color: blue;
+    padding-left: 222px;
+    width: 35%;
+    float: right;
+    font-size: 14px;
+	}
+.title_down_other {
+    padding: 0 15px;
+    line-height: 45px;
+    border-bottom: 1px #eee solid;
+    font-size: 12px;
+	}
+.f12 {
+    font-size: 12px;
+	}
+.fr {
+    float: right;
+	}
+.product_choose_ucbrowser, .msg_down, .phone_down {
+    width: 30%;
+    float: left;
+    height: 252px;
+    padding: 15px 1.5%;
+    border-right: 1px #eee solid;
+	}
+.code_down  {
+    width: 30%;
+    float: left;
+    height: 252px;
+    padding: 15px 1.5%;
+    border-left: 1px #eee solid;
+	}
+.down_title {
+    font-size: 14px;
+	}
+.btn-pp-blue{
+	display:inline-block;
+	padding:10px 0;
+	width:200px;
+	height:28px;
+	line-height:26px;
+	text-align:center;
+	font-size:15px;
+	color:#fff;
+	background:#6aa7df;
+	}
+.btn-pp-green{
+	display:inline-block;
+	padding:10px 0;
+	width:200px;
+	height:28px;
+	line-height:26px;
+	text-align:center;
+	font-size:15px;
+	color:#fff;
+	background:#81b846;
+	}
+.btn-pp-blue em {
+	display:inline-block;
+	margin-right:3px;
+	width:26px;
+	height:28px;
+	background:url(images/ico_pp_blue.png) center no-repeat;
+	vertical-align:-8px;
+	*vertical-align:-5px;
+	}
+.btn-pp-green em {
+	display:inline-block;
+	margin-right:3px;
+	width:26px;
+	height:28px;
+	background:url(images/ico_pp_blue.png) center no-repeat;
+	vertical-align:-8px;
+	*vertical-align:-5px;
+	}
+.btn-orange {
+	padding:0 15px;
+	min-width:86px;
+	height:32px;
+	line-height:32px;
+	text-align:center;
+	font-family:inherit;
+	color:#fff;
+	background:#f60;
+	border:0;
+	cursor:pointer;
+	}
+.left_bar {
+	width:650px;
+	padding:10px 0 20px 10px;
+	border-right:1px #eee solid;
+	}
+.icons{
+	border: none;
+    line-height: 24px;
+    background: #fff;
+	}
+p{
+	font-size:12px;
+	text-align: center;
+	}
+.icons_inner{
+	width:990px;
+	height:145px;
+	margin:0 auto;
+	}
+.icons1{
+	width:139px;
+	text-align:center;
+	float:left
+	}
+.icons3{
+	float:right;
+	margin-top:-55px;
+	}
+#main{
+	width:990px;
+	height:411px;
+	margin:0 auto;
+    }
+.main_left{
+	width:290px;
+	float:left;
+	}
+.main_left_top_l{
+	float:left;
+	}
+h3{
+	color: #666;
+    font: bold 14px/46px "Microsoft YaHei","微软雅黑","宋体",arial;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-stretch: normal;
+    font-size: 14px;
+    line-height: 46px;
+    font-family: "Microsoft YaHei", 微软雅黑, 宋体, arial;
+	}
+.main_left_top_r{
+	padding-top:5px;
+	font-size:14px;
+	color:#585858;
+	float:right;
+	}
+.juxing{
+	line-height:34px;
+	font-size: 14px;
+    text-align: center;
+    font-family: 微软雅黑;
+	height:34px;
+	background-color:#f2f2f2;
+	}
+.text{
+	float:left;
+	font-family:"微软雅黑";
+	font-size:14px;
+	line-height:28px;
+	}
+.main_middle{
+	width:290px;
+	float:left;
+	margin-left:58px;
+	}
+#footer{
+	height:371px;
+	background-color:#333;
+	}
+.footer_inner{
+	width:990px;
+	margin:0 auto;
+	}
+.footer_top{
+	padding-top:50px;
+	}
+.footer_top_l{
+	width:165px;
+	float:left;
+	color:#b5a7a7;
+	}
+.footer_top_l li{
+	height:19px;
+	line-height:19px;
+	font-family:"微软雅黑";
+	font-size:14px;
+	}
+.li1{
+	font-weight:bold;
+	}
+.footer_top_r{
+	widht:165px;
+	float:left;
+	} 
+.version{
+	width:136px;
+	height:22px;
+	border:1px solid #434343;
+	background-image:url(images/arrow-down_03.jpg);
+	background-repeat:no-repeat;
+	background-position:120px center;
+	
+	}
+.chinese{
+	height:22px;
+	font-family:"微软雅黑";
+	font-size:14px;
+	color:#b5a7a7;
+	background-image:url(images/earth_03.jpg);
+	background-repeat:no-repeat;
+	background-position:8px center;
+	padding-left:28px;
+	}
+.footer_top_r li{
+	height:26px;
+	line-height:26px;
+	font-family: "微软雅黑";
+	font-size:14px;
+	color:#b5a7a7;
+	padding-left:30px;
+	background-repeat:no-repeat;
+	background-position:left center;
+	}
+.tel{
+	background-image:url(images/img_06.jpg);
+	}
+.pad{
+	background-image:url(images/img_08.jpg);
+	}
+.TV{
+	background-image:url(images/img_10.jpg);
+	}
+.weibo{
+	background-image:url(images/img_12.jpg);
+	}
+.tieba{
+	background-image:url(images/img_14.jpg);
+	}
+.wechat{
+	background-image:url(images/img_16.jpg);
+	}
+.footer_mid1{
+	margin-top:20px;
+	padding-top:12px;
+	height:37px;
+	border-top:1px dotted #b5a7a7;
+	border-bottom:1px dotted #b5a7a7;
+	font-family:"微软雅黑";
+	font-size:14px;
+	color:#b5a7a7;
+	background-image:url(images/arrow_down2_03.jpg);
+	background-repeat:no-repeat;
+	background-position:964px center;
+	}
+.footer_mid2{
+	padding-top:12px;
+	height:37px;
+	border-bottom:1px dotted #b5a7a7;
+	font-family:"微软雅黑";
+	font-size:14px;
+	color:#b5a7a7;
+	background-image:url(images/arrow_down2_03.jpg);
+	background-repeat:no-repeat;
+	background-position:964px center;
+	}
+.clear{
+	clear:both;
+	}
+span{
+	font-size:10px;
+	margin:0 7px;
+	}
+.arrow_down{
+	float:right;
+	}
+.footer_bot{
+	width:990px;
+	margin:0 auto;
+	}
+.footer_bot_l{
+	float:left;
+	width:132px;
+	height:117px;
+	background-image:url(images/logo_company.png);
+	background-repeat:no-repeat;
+	background-position:left 31px;
+	}
+.footer_bot_m{
+	padding-top:20px;
+	float:left;
+	width:479px;
+	height:117px;
+	}
+.footer_bot_text{
+	width:395px;
+	font-family:"微软雅黑";
+	font-size:12px;
+	color:#646369;
+	}
+.footer_bot_r{
+	padding-top:26px;
+	width:376px;
+	height:117px;
+	float:left;
+	}
+.icons2{
+	margin-right:15px;
+	float:right;
+	}
+</style>
+</head>
+
+<body>
+<div id="header">
+    <div class="logo"><img src="images/logo_03.jpg"/></div>
+    <div class="nav"><img src="images/nav_03.jpg"/></div>
+</div>
+<div class="wrap" id="wrap_cont">
+	<div class="container">
+        <div class="nav_guide">
+            <a href="http://www.uc.cn">首页&gt;</a>
+            <a href="/product/product_choose_browser.shtml">产品选择</a>
+        </div>
+		<div class="icons">
+            <div class="title_down">
+                 <h3>热门下载</h3>
+            </div>
+            <ul id="system_list" class="system_list clearfix">
+                <li>
+                    <div class="icons1"><img src="images/download_icons_03.jpg"/><p>电脑版</p></div>
+                </li>
+                <li>
+                    <div class="icons1"><img src="images/download_icons_05.jpg"/><p>Android</p></div>
+                </li>
+                <li>
+                    <div class="icons1"><img src="images/download_icons_07.jpg"/><p>iOS(iPhone)</p></div>
+                </li>
+                <li>
+                    <div class="icons1"><img src="images/download_icons_09.jpg"/><p>iOS(iPad)</p></div>
+                </li>
+                <li>
+                    <div class="icons1"><img src="images/download_icons_11.jpg"/><p>aPad</p></div>
+                </li>
+                <li>
+                    <div class="icons1"><img src="images/download_icons_13.jpg"/><p>TV版</p></div>
+                </li>
+                <li>
+                    <div class="icons1"><img src="images/download_icons_15.jpg"/><p>WP</p></div>
+                </li>
+			</ul>
+            <div class="downsystem">
+                <a>Java</a> | 
+                <a>Symbian</a> | 
+                <a>WM(PPC/SP)</a> | 
+                <a>Meego</a> | 
+                <a>斯凯mrp</a> | 
+                <a>Blackberry</a> | 
+                <a>Ophone</a> | 
+             	<a>WinPad</a>
+			</div>
+        </div>
+        <div class="space_15"></div>
+		<div class="icons">
+        	<div class="title_down">
+          		<div class="search">
+					<input id="search_input" class="input_text" type="text" value="输入手机型号:如N97" >
+					<input id="search_btn_new" class="input_sub" type="button" >
+          		</div>
+          		<h3>按机型下载</h3>
+        	</div>
+			<div id="hotModels">
+            	<ul class="down_hot_list clearfix">
+                	<li>iPhone 5S</li>
+                    <li>GALAXY Note 3</li>
+                    <li>G6-U00</li>
+                    <li>galaxy s4 sgh-i337 </li>
+                    <li>iPhone 5C</li>
+                    <li>MX3</li>
+                    <li>MI3</li>
+                    <li>P6-U06</li>
+                    <li>Xperia Z1</li>
+                    <li>One</li>
+                    <li>vivo Xplay</li>
+                    <li>GALAXY Note2</li>
+				</ul>
+			</div>
+            <div class="choose_model">
+                <span class="choose_model_btn">
+                <em></em>更多手机型号
+                </span>
+            </div>
+		</div>
+		<div class="space_15"></div>
+        <div class="icons" style="height:350px;">
+			<div class="title_down_other">
+				<div class="fr f12">如无法下载或有其他建议请给我们&nbsp;反馈</div>
+           		<h3>其他下载方式</h3>
+         	</div>
+         	<div class="cont clearfix">
+           		<div class="product_choose_ucbrowser" style="background:none;">
+             	<div class="down_title">一键下载</div>
+             	<div class="down_title" style="margin-top:20px;text-align:center;">iPhone （仅支持越狱手机）</div>
+             	<div style="margin-top:10px;text-align:center;">
+                	<a class="btn-pp-blue">
+               		<em></em>PP助手一键下载
+                    </a>
+             	</div>
+             	<div class="down_title" style="margin-top:30px;text-align:center;">Android手机</div>
+             	<div style="margin-top:10px;text-align:center;">
+               		<a class="btn-pp-green">
+               		<em></em>PP助手一键下载
+                    </a>
+             	</div>
+			</div>
+            <div class="phone_down" style="border-right: none;">
+				<div class="down_title">短信下载</div>
+				<div class="f12">输入您的手机号，我们会发送一条短信到您的手机，点击短信中的网址即可下载UC浏览器</div>
+					<input class="input_text" type="text" value="在此输入您的手机号码" >
+					<input class="input_text2" type="text" value="输入验证码" >
+                    <div style="margin-top: 10px;margin-right: 28px;float: right;">
+                    	<img src="images/download.yzm_03.jpg" >
+					</div>
+                    <div class="choose_model2">看不清？换一张</div>
+                    <div class="choose_model1">
+                		<span class="choose_model1_btn">发送</span>
+            		</div>
+				</div>
+			</div>
+			<div class="code_down" style="border-right: none;">
+				<div class="down_title">二维码下载</div>
+				<div class="f12">使用手机二维码软件扫描下图，即可下载UC浏览器。</div>
+					<p style="padding-top:10px;text-align:center;"><img src="images/twocode_pro.png"></p>
+					<p style="text-align:center;font-size:14px;">手机访问 wap.uc.cn</p>
+				</div>
+			</div>
+		</div>
+        <div class="space_15"></div>
+    </div>
+    <div id="footer">
+        <div class="footer_inner">
+            <div class="footer_top">
+                <div class="footer_top_l">  
+                    <ul>
+                        <li class="li1">UC浏览器</li>
+                        <li>产品动态</li>
+                        <li>功能介绍</li>
+                        <li>安卓浏览器</li>
+                        <li>iPhone浏览器</li>
+                        <li>电脑浏览器</li>
+                        <li>WP浏览器</li>
+                        <li>iPad浏览器</li>
+                        <li>aPad浏览器</li>
+                        <li>TV浏览器</li>
+                        <li>塞班浏览器</li>
+                    </ul>
+                </div>
+                <div class="footer_top_l">  
+                    <ul>
+                        <li class="li1">公司</li>
+                        <li>公司首页</li>
+                        <li>公司概况</li>
+                        <li>公司动态</li>
+                        <li>管理团队</li>
+                        <li>企业文化</li>
+                        <li>粉丝专区</li>
+                        <li>荣誉之旅</li>
+                        <li>联系我们</li>
+                        <li>投资者</li>
+                        <li>UC闪屏</li>
+                    </ul>
+                </div>
+                <div class="footer_top_l">  
+                    <ul>
+                        <li class="li1">其他产品</li>
+                        <li>UC九游</li>                   
+                        <li>PP助手</li>
+                        <li>神马搜索</li>
+                        <li>UC云</li>
+                        <li>U点充值</li>
+                        <li>用户中心</li>
+                        <li>体验中心</li>
+                        <li>帮助中心</li>                    
+                        <li>意见反馈</li>
+                    </ul>
+                </div>
+                <div class="footer_top_l">  
+                    <ul>
+                        <li class="li1">开放合作</li>
+                        <li>游戏开放平台</li>
+                        <li>功运营商合作</li>
+                        <li>终端厂商合作</li>
+                        <li>互联网合作</li>
+                        <li>开发者中心</li>
+                        <li>战略投资</li>
+                    </ul>
+                </div>
+                <div class="footer_top_l">  
+                    <ul>
+                        <li class="li1">招聘</li>
+                        <li>社会招聘</li>
+                        <li>人才推荐</li>
+                        <li>校园招聘</li>
+                        <li>实习生招聘</li>
+                        <li>内部推荐</li>
+                        <li>走进UC</li>
+                    </ul>
+                </div>
+                <div class="footer_top_r">
+                    <div class="version">
+                        <div class="chinese">中文版</div>
+                    </div>
+                    <ul> 
+                        <li class="tel">手机站</li>
+                        <li class="pad">Pad站</li>
+                        <li class="TV">TV站</li>
+                        <li class="weibo">UC浏览器微博</li>
+                        <li class="tieba">UC浏览器贴吧</li>
+                        <li class="wechat">UC浏览器微信</li>
+                    </ul>	
+                </div>
+            </div>
+            <div class="clear"></div>
+            </div>
+            <div class="footer_bot">
+                <div class="footer_bot_l"></div>
+                <div class="footer_bot_m">
+                    <p class="footer_bot_text">©2004-2014 uc.cn 版权所有 网络文化经营许可证：文网文[2010]176号
+    中华人民共和国互联网药品信息服务资格证：（粤）-非经营性-2011-0120
+    增值电信业务经营许可证: 粤B2-20070379 粤ICP备09210879号</p>
+                </div>
+                <div class="footer_bot_r">
+                    <div class="icons2"><img src="images/anva.png"/img></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
